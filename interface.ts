@@ -33,9 +33,13 @@ const product2: ClothingProduct = {
   sizes: [Size.M, Size.L],
 };
 
-function printProduct(product: Product) {
-  console.log(`${product.name}의 가격은 ${product.price}원입니다.`);
+interface PrintProductFunction {
+  (product: Product): void;
 }
+
+const printProduct: PrintProductFunction = (product) => {
+  console.log(`${product.name}의 가격은 ${product.price}원입니다.`);
+};
 
 printProduct(product1);
 printProduct(product2);
