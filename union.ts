@@ -54,6 +54,8 @@ enum ClothingSize {
   XL = "XL",
 }
 
+// type ClothingSize = "S" | "M" | "L" | "XL";
+
 interface Product {
   id: string;
   name: string;
@@ -77,6 +79,7 @@ function printSizes(product: ClothingProduct | ShoeProduct) {
   const availableSizes = product.sizes.join(", ");
   console.log(`구매 가능한 사이즈는 다음과 같습니다: ${availableSizes}`);
 
+  // 조건 연산에서 in을 활용해 객체 내에 속성이 있는지 확인 후 접근할 수도 있다.
   if ("color" in product) {
     console.log(`색상: ${product.color}`);
   }
