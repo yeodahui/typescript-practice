@@ -46,6 +46,7 @@ printArray(shoeSizes); // T === number
 printArray(clothingSizes); // T === string
 
 // 꺾쇠를 이용해 직접 타입파라미터를 정의해줄 수 있다.
+// 명시적 제네릭 타입 인수라고 함.
 printArray<boolean>(shoeSizes);
 
 /**
