@@ -1,3 +1,4 @@
 /node_modules
 /build
 package-lock.json
+/codeit-react-ts/node_modules
